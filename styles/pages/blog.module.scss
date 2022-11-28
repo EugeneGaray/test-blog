@@ -1,0 +1,25 @@
+@import './../variables.scss';
+@import './../mixins.scss';
+
+.blog {
+  @include main-content-min-height-blog;
+  max-width: 1318px;
+  margin: 0 auto;
+  padding: 0 24px;
+  
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $gutter-ml;
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+    width: 260px;
+
+    &_items{
+      width: 100%;
+    }
+  }
+}

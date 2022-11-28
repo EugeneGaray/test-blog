@@ -1,0 +1,58 @@
+@import '../../../../../styles/variables.scss';
+@import '../../../../../styles/mixins.scss';
+
+.post-body {
+  @include main-content-min-height-blog;
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $gutter-lg;
+  }
+
+  &__head-image {
+    position: relative;
+    height: 200px;
+    margin-top: $gutter-ml;
+    margin-bottom: $gutter-lg;
+
+    @media screen and (min-width: 600px) {
+      height: 250px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 320px;
+    }
+  }
+
+  &__content {
+    margin-bottom: $gutter-lg;
+
+    h1 {
+      margin-bottom: $gutter-lg;
+      font-size: $font-size-xl;
+      font-weight: 700;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: $gutter-xlg;
+        font-size: 65px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+    
+    p{
+      padding: 4px 0;
+    }
+  
+    figcaption{
+      font-weight: bold;
+    }
+
+    figure {
+      margin: $gutter-ms 0;
+    }
+  }
+}

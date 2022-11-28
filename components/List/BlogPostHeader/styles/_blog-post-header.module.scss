@@ -1,0 +1,35 @@
+@import '/styles/variables';
+
+.blog-post-header {
+  padding-top: $gutter-ml;
+
+  &__title {
+    cursor: pointer;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__published-date {
+    display: flex;
+    margin-top: $gutter-sm;
+  }
+
+  &__date-text{
+    margin-left: 6px;
+    color: $color-dark-gray;
+  }
+
+  &__dateIcon {
+    & circle {
+      fill: $color-dark-gray;
+    }
+  }
+}
